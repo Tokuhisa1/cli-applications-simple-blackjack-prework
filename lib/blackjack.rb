@@ -45,7 +45,7 @@ def hit?(card_total)
   input = get_user_input
   valid_inputs = ['h', 's']
   
-  until valid_inputs.includes?(input)
+  until valid_inputs.include?(input)
     invalid_command
     prompt_user
     input = get_user_input
