@@ -43,8 +43,9 @@ def hit?(card_total)
   binding.pry
   prompt_user
   input = get_user_input
+  valid_inputs = ['h', 's']
   
-  while input != 'h' || input != 's'
+  until valid_inputs.includes?(input)
     invalid_command
     prompt_user
     input = get_user_input
