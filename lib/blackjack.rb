@@ -40,7 +40,7 @@ end
 
 def hit?(card_total)
   # code hit? here
-  binding.pry
+  # binding.pry
   prompt_user
   input = get_user_input
   valid_inputs = ['h', 's']
